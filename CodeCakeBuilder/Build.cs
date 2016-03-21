@@ -119,14 +119,14 @@ namespace CodeCake
                     // AND CodeCakeBuilder is running in interactive mode (ie. no -nointeraction parameter),
                     // then the user is prompted to enter it.
                     // This is specific to CodeCake (in Code.Cake.dll).
-                 // var apiKey = Cake.InteractiveEnvironmentVariable("NUGET_API_KEY");
-                   //if (string.IsNullOrEmpty(apiKey)) throw new InvalidOperationException("Could not resolve NuGet API key.");
+                    var apiKey = Cake.InteractiveEnvironmentVariable("NUGET_API_KEY");
+                   if (string.IsNullOrEmpty(apiKey)) throw new InvalidOperationException("Could not resolve NuGet API key.");
 
                    var settings = new NuGetPushSettings
                    {
                        //  Source = "https://www.nuget.org/api/v2/package",
                        Source = "https://www.myget.org/F/cake_example",
-                     //  ApiKey = apiKey
+                       ApiKey = apiKey
                    };
 
                    foreach (var nupkg in Cake.GetFiles(releasesDir.Path + "/*.nupkg"))
