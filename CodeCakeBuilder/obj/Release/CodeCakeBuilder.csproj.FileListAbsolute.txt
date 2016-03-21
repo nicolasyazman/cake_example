@@ -1,0 +1,15 @@
+C:\Users\Nicolas\Documents\Visual Studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Release\CodeCakeBuilder.exe.config
+C:\Users\Nicolas\Documents\Visual Studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Release\CodeCakeBuilder.exe
+C:\Users\Nicolas\Documents\Visual Studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Release\CodeCakeBuilder.pdb
+C:\Users\Nicolas\Documents\Visual Studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Release\Cake.Common.dll
+C:\Users\Nicolas\Documents\Visual Studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Release\Cake.Core.dll
+C:\Users\Nicolas\Documents\Visual Studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Release\Code.Cake.dll
+C:\Users\Nicolas\Documents\Visual Studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Release\Cake.Common.pdb
+C:\Users\Nicolas\Documents\Visual Studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Release\Cake.Common.xml
+C:\Users\Nicolas\Documents\Visual Studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Release\Cake.Core.pdb
+C:\Users\Nicolas\Documents\Visual Studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Release\Cake.Core.xml
+C:\Users\Nicolas\Documents\Visual Studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Release\Code.Cake.pdb
+C:\Users\Nicolas\Documents\Visual Studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Release\Code.Cake.xml
+C:\Users\Nicolas\Documents\Visual Studio 2015\Projects\CakeExample\CodeCakeBuilder\obj\Release\CodeCakeBuilder.csprojResolveAssemblyReference.cache
+C:\Users\Nicolas\Documents\Visual Studio 2015\Projects\CakeExample\CodeCakeBuilder\obj\Release\CodeCakeBuilder.exe
+C:\Users\Nicolas\Documents\Visual Studio 2015\Projects\CakeExample\CodeCakeBuilder\obj\Release\CodeCakeBuilder.pdb

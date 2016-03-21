@@ -1,0 +1,15 @@
+c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Debug\CodeCakeBuilder.exe.config
+c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Debug\CodeCakeBuilder.exe
+c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Debug\CodeCakeBuilder.pdb
+c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Debug\Cake.Common.dll
+c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Debug\Cake.Core.dll
+c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Debug\Code.Cake.dll
+c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Debug\Cake.Common.pdb
+c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Debug\Cake.Common.xml
+c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Debug\Cake.Core.pdb
+c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Debug\Cake.Core.xml
+c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Debug\Code.Cake.pdb
+c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CodeCakeBuilder\bin\Debug\Code.Cake.xml
+c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CodeCakeBuilder\obj\Debug\CodeCakeBuilder.csprojResolveAssemblyReference.cache
+c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CodeCakeBuilder\obj\Debug\CodeCakeBuilder.exe
+c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CodeCakeBuilder\obj\Debug\CodeCakeBuilder.pdb

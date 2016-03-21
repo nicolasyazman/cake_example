@@ -1,0 +1,5 @@
+c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CakeExample\bin\Debug\CakeExample.dll
+c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CakeExample\bin\Debug\CakeExample.pdb
+c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CakeExample\obj\Debug\CakeExample.csprojResolveAssemblyReference.cache
+c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CakeExample\obj\Debug\CakeExample.dll
+c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CakeExample\obj\Debug\CakeExample.pdb
