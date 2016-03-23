@@ -1,0 +1,11 @@
+C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample.Tests\bin\Release\CakeExample.Tests.dll
+C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample.Tests\bin\Release\CakeExample.Tests.pdb
+C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample.Tests\bin\Release\CakeExample.dll
+C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample.Tests\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample.Tests\bin\Release\nunit.framework.dll
+C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample.Tests\bin\Release\CakeExample.pdb
+C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample.Tests\bin\Release\nunit.framework.xml
+C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample.Tests\bin\Release\fr\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample.Tests\obj\Release\CakeExample.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample.Tests\obj\Release\CakeExample.Tests.dll
+C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample.Tests\obj\Release\CakeExample.Tests.pdb

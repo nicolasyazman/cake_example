@@ -3,7 +3,3 @@ c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CakeExample\b
 c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CakeExample\obj\Debug\CakeExample.csprojResolveAssemblyReference.cache
 c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CakeExample\obj\Debug\CakeExample.dll
 c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CakeExample\obj\Debug\CakeExample.pdb
-C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample\bin\Debug\CakeExample.dll
-C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample\bin\Debug\CakeExample.pdb
-C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample\obj\Debug\CakeExample.dll
-C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample\obj\Debug\CakeExample.pdb

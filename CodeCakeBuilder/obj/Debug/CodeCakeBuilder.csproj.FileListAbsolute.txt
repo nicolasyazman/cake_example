@@ -19,11 +19,13 @@ C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake
 C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CodeCakeBuilder\bin\Debug\Cake.Common.dll
 C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CodeCakeBuilder\bin\Debug\Cake.Core.dll
 C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CodeCakeBuilder\bin\Debug\Code.Cake.dll
+C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CodeCakeBuilder\bin\Debug\nunit.framework.dll
 C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CodeCakeBuilder\bin\Debug\Cake.Common.pdb
 C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CodeCakeBuilder\bin\Debug\Cake.Common.xml
 C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CodeCakeBuilder\bin\Debug\Cake.Core.pdb
 C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CodeCakeBuilder\bin\Debug\Cake.Core.xml
 C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CodeCakeBuilder\bin\Debug\Code.Cake.pdb
 C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CodeCakeBuilder\bin\Debug\Code.Cake.xml
+C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CodeCakeBuilder\bin\Debug\nunit.framework.xml
 C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CodeCakeBuilder\obj\Debug\CodeCakeBuilder.exe
 C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CodeCakeBuilder\obj\Debug\CodeCakeBuilder.pdb

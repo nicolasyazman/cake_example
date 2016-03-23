@@ -7,12 +7,3 @@ c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CakeExample.T
 c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CakeExample.Tests\obj\Debug\CakeExample.Tests.csprojResolveAssemblyReference.cache
 c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CakeExample.Tests\obj\Debug\CakeExample.Tests.dll
 c:\users\nicolas\documents\visual studio 2015\Projects\CakeExample\CakeExample.Tests\obj\Debug\CakeExample.Tests.pdb
-C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample.Tests\bin\Debug\CakeExample.Tests.dll
-C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample.Tests\bin\Debug\CakeExample.Tests.pdb
-C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample.Tests\bin\Debug\CakeExample.dll
-C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample.Tests\bin\Debug\CakeExample.pdb
-C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample.Tests\bin\Debug\fr\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
-C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample.Tests\obj\Debug\CakeExample.Tests.csprojResolveAssemblyReference.cache
-C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample.Tests\obj\Debug\CakeExample.Tests.dll
-C:\Users\Nicolas\Documents\INTECH Info\S5\Integration continue\cake_example\cake_example\CakeExample.Tests\obj\Debug\CakeExample.Tests.pdb

@@ -11,6 +11,7 @@ using Cake.Core.Diagnostics;
 using Cake.Common.Tools.NuGet.Restore;
 using System;
 using Cake.Common.Tools.NuGet.Push;
+using Cake.Common.Tools.NUnit;
 
 namespace CodeCake
 {
@@ -39,16 +40,16 @@ namespace CodeCake
 
             Task("Clean")
                 .Does(() =>
-               {
+                {
                     // Avoids cleaning CodeCakeBuilder itself!
                     Cake.CleanDirectories("**/bin/" + configuration, d => !d.Path.Segments.Contains("CodeCakeBuilder"));
-                   Cake.CleanDirectories("**/obj/" + configuration, d => !d.Path.Segments.Contains("CodeCakeBuilder"));
-                   Cake.CleanDirectories(releasesDir);
-               });
+                    Cake.CleanDirectories("**/obj/" + configuration, d => !d.Path.Segments.Contains("CodeCakeBuilder"));
+                    Cake.CleanDirectories(releasesDir);
+                });
 
             Task("Restore-NuGet-Packages")
                 .Does(() =>
-               {
+                {
                     // Reminder for first run.
                     // Bootstrap.ps1 ensures that Tools/nuget.exe exists
                     // and compiles this CodeCakeBuilder application in Release mode.
@@ -56,84 +57,92 @@ namespace CodeCake
                     // once done bin/Release/CodeCakeBuilder.exe can be called to do its job.
                     // (Of course, the following check can be removed and nuget.exe be conventionnaly located somewhere else.)
                     if (!Cake.FileExists("CodeCakeBuilder/Tools/nuget.exe"))
-                   {
-                       throw new Exception("Please execute Bootstrap.ps1 first.");
-                   }
+                    {
+                        throw new Exception("Please execute Bootstrap.ps1 first.");
+                    }
 
-                   Cake.Information("Restoring nuget packages for existing .sln files at the root level.", configuration);
-                   foreach (var sln in Cake.GetFiles("*.sln"))
-                   {
-                       Cake.NuGetRestore(sln);
-                   }
-               });
+                    Cake.Information("Restoring nuget packages for existing .sln files at the root level.", configuration);
+                    foreach (var sln in Cake.GetFiles("*.sln"))
+                    {
+                        Cake.NuGetRestore(sln);
+                    }
+                });
 
             Task("Build")
                 .IsDependentOn("Clean")
                 .IsDependentOn("Restore-NuGet-Packages")
                 .Does(() =>
-               {
-                   Cake.Information("Building all existing .sln files at the root level with '{0}' configuration (excluding this builder application).", configuration);
-                   foreach (var sln in Cake.GetFiles("*.sln"))
-                   {
-                       using (var tempSln = Cake.CreateTemporarySolutionFile(sln))
-                       {
+                {
+                    Cake.Information("Building all existing .sln files at the root level with '{0}' configuration (excluding this builder application).", configuration);
+                    foreach (var sln in Cake.GetFiles("*.sln"))
+                    {
+                        using (var tempSln = Cake.CreateTemporarySolutionFile(sln))
+                        {
                             // Excludes "CodeCakeBuilder" itself from compilation!
                             tempSln.ExcludeProjectsFromBuild("CodeCakeBuilder");
-                           Cake.MSBuild(tempSln.FullPath, new MSBuildSettings()
-                                   .SetConfiguration(configuration)
-                                   .SetVerbosity(Verbosity.Minimal)
-                                   .SetMaxCpuCount(1));
-                       }
-                   }
-               });
+                            Cake.MSBuild(tempSln.FullPath, new MSBuildSettings()
+                                    .SetConfiguration(configuration)
+                                    .SetVerbosity(Verbosity.Minimal)
+                                    .SetMaxCpuCount(1));
+                        }
+                    }
+                });
+
+            Task("Unit-Testing")
+                .IsDependentOn("Build")
+                .Does(() =>
+                {
+                    Cake.Information("Beginning unit testing.");
+                    Cake.NUnit("*.Tests/bin/" + configuration + "/*.Tests.dll", new NUnitSettings() { Framework = "v4.5" });
+                });
 
             Task("Create-NuGet-Packages")
                 .IsDependentOn("Build")
                 .Does(() =>
-               {
-                   Cake.CreateDirectory(releasesDir);
-                   var settings = new NuGetPackSettings()
-                   {
+                {
+                    Cake.CreateDirectory(releasesDir);
+                    var settings = new NuGetPackSettings()
+                    {
                         // Hard coded version!?
                         // Cake offers tools to extract the version number from a ReleaseNotes.txt.
                         // But other tools exist: have a look at SimpleGitVersion.Cake to easily 
                         // manage Constrained Semantic Versions on Git repositories.
                         Version = "1.0.0-alpha",
-                       BasePath = Cake.Environment.WorkingDirectory,
-                       OutputDirectory = releasesDir
-                   };
-                   foreach (var nuspec in Cake.GetFiles("CodeCakeBuilder/NuSpec/*.nuspec"))
-                   {
-                       Cake.NuGetPack(nuspec, settings);
-                   }
+                        BasePath = Cake.Environment.WorkingDirectory,
+                        OutputDirectory = releasesDir
+                    };
+                    foreach (var nuspec in Cake.GetFiles("CodeCakeBuilder/NuSpec/*.nuspec"))
+                    {
+                        Cake.NuGetPack(nuspec, settings);
+                    }
 
-               });
+                });
 
             // We want to push on NuGet only the Release packages.
             Task("Push-NuGet-Packages")
                 .IsDependentOn("Create-NuGet-Packages")
                 .WithCriteria(() => configuration == "Release")
                 .Does(() =>
-               {
+                {
                     // Resolve the API key: if the environment variable is not found
                     // AND CodeCakeBuilder is running in interactive mode (ie. no -nointeraction parameter),
                     // then the user is prompted to enter it.
                     // This is specific to CodeCake (in Code.Cake.dll).
                     var apiKey = Cake.InteractiveEnvironmentVariable("NUGET_API_KEY");
-                   if (string.IsNullOrEmpty(apiKey)) throw new InvalidOperationException("Could not resolve NuGet API key.");
+                    if (string.IsNullOrEmpty(apiKey)) throw new InvalidOperationException("Could not resolve NuGet API key.");
 
-                   var settings = new NuGetPushSettings
-                   {
-                       //  Source = "https://www.nuget.org/api/v2/package",
-                       Source = "https://www.myget.org/F/cake_example",
-                       ApiKey = apiKey
-                   };
+                    var settings = new NuGetPushSettings
+                    {
+                        //  Source = "https://www.nuget.org/api/v2/package",
+                        Source = "https://www.myget.org/F/cake_example",
+                        ApiKey = apiKey
+                    };
 
-                   foreach (var nupkg in Cake.GetFiles(releasesDir.Path + "/*.nupkg"))
-                   {
-                       Cake.NuGetPush(nupkg, settings);
-                   }
-               });
+                    foreach (var nupkg in Cake.GetFiles(releasesDir.Path + "/*.nupkg"))
+                    {
+                        Cake.NuGetPush(nupkg, settings);
+                    }
+                });
 
             Task("Default").IsDependentOn("Push-NuGet-Packages");
 
